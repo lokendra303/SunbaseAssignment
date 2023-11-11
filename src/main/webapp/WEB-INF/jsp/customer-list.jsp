@@ -13,7 +13,7 @@
         border-collapse: collapse;
         width: 60%;
         margin-left: 20%;
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     .row {
@@ -58,9 +58,16 @@
     <div class="msg">
         <%
             if (request.getAttribute("msg") != null) {
-                out.print(request.getAttribute("msg"));
-            }
-        %>
+                %>
+        <div style="text-align: center">
+            <h2> ${msg}</h2>
+        </div>
+
+           <% }
+              %>
+    </div>
+    <div style="text-align: center">
+        <h2>Customer Details</h2>
     </div>
     <table class="userList">
         <tr class="row">
@@ -103,7 +110,7 @@
             &city=<%= user.getCity()%>
             &state=<%= user.getState()%>
             &email=<%= user.getEmail()%>
-            &phone=<%= user.getPhone()%>">Edit</a></td>
+            &phone=<%= user.getPhone()%>">Update</a></td>
         </tr>
         <%
             }

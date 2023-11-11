@@ -18,12 +18,14 @@
     .form-field {
         margin-bottom: 10px;
         display: flex;
+        padding: 5px;
     }
 
     .form-field input {
         width: 100%;
         padding: 10px;
         border: 1px solid #eee;
+
 
     }
 
@@ -44,9 +46,10 @@
 
 </style>
 <body>
-<h1> update page </h1>
-
 <h2> ${msg}</h2>
+<div style="text-align: center">
+    <h2>Update Customer Details</h2>
+</div>
 <div class="form-container">
     <form action="${pageContext.request.contextPath}/updateCustomer"
           method="post">

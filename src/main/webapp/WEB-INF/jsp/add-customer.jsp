@@ -45,8 +45,13 @@
 </style>
 <body>
 
+<div style="text-align: center">
+    <h2> ${msg}</h2>
+</div>
 
- <h2> ${msg}</h2>
+ <div style="text-align: center">
+     <h2>Add New Customer</h2>
+ </div>
 <div class="form-container">
     <form action="${pageContext.request.contextPath}/customer"
           method="post">
